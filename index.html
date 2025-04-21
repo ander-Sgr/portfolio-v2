@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ander portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div style="font-weight: bold;">Anderson.</div>
+        <ul>
+            <li>01. About</li>
+            <li>02. Projects</li>
+            <li>03. Contact</li>
+            <li><a class="resume-button" href="#">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <span style="color: var(--accent-color); font-size: 0.9rem;">Cloud & Devops Enthusiast</span>
+            <h1>Hola, soy Anderson</h1>
+            <h2>Me gusta hacer ☁️</h2>
+            <p>
+                Entusiasta de la tecnologia, con experienia en web development y cloud, actualmente
+                estoy desarrollando mi carrera al Cloud, desarrolando proyectos en python y desplegando
+                con terraform en aws.
+            </p>
+            <a class="cta" href="#">Contáctame</a>
+        </div>
+        <div class="image-container">
+            <img src="./assets/portfolio.png" alt="profile photo">
+            <div class="social-footer">
+                <a href="https://github.com/tuusuario" target="_blank" title="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://linkedin.com/in/tuusuario" target="_blank" title="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="mailto:tuemail@example.com" title="Email">
+                    <i data-lucide="mail"></i>
+                </a>
+            </div>
+        </div>
+
+
+    </section>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+
+</body>
+
+</html>
