@@ -22,7 +22,7 @@
 }
 
 .logo {
-    max-height: 80px;
+    max-height: 120px;
     width: auto;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
