@@ -5,17 +5,16 @@ const Card = ({ imgProject, titleProject, description, svgIcon = [], urlDemo, ur
     return (
         <div className={styles.cardContainer}>
             <div className={styles.imageContainer}>
+                <div className={styles.imageBackground} style={{ backgroundImage: `url(${imgProject})` }}></div>
                 <img src={imgProject} alt="img_project" className={styles.projectImage} />
             </div>
             <div className={styles.contentContainer}>
-                <h3 className={styles.projectTitle}>{titleProject}</h3>
+                <h2 className={styles.projectTitle}>{titleProject}</h2>
                 <p className={styles.projectDescription}>{description}</p>
                 <div className={styles.techStack}>
-                    <div className={styles.techStack}>
-                        {svgIcon.map((icon, index) => (
-                            <span key={index}>{icon}</span>
-                        ))}
-                    </div>
+                    {svgIcon.map((icon, index) => (
+                        <span key={index}>{icon}{icon.key}</span>
+                    ))}
                 </div>
                 <div className={styles.buttonsContainer}>
                     <a className={styles.buttonLink} href={urlDemo} target="_blank" rel="noopener noreferrer">Demo</a>
