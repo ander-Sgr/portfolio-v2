@@ -10,12 +10,13 @@ const Card = ({ imgProject, titleProject, description, svgIcon = [], urlDemo, ur
             </div>
             <div className={styles.contentContainer}>
                 <h2 className={styles.projectTitle}>{titleProject}</h2>
-                <p className={styles.projectDescription}>{description}</p>
                 <div className={styles.techStack}>
                     {svgIcon.map((icon, index) => (
                         <span key={index}>{icon}{icon.key}</span>
                     ))}
                 </div>
+                <p className={styles.projectDescription}>{description}</p>
+
                 <div className={styles.buttonsContainer}>
                     <a className={styles.buttonLink} href={urlDemo} target="_blank" rel="noopener noreferrer">Demo</a>
                     <a className={styles.buttonLink} href={urlCode} target="_blank" rel="noopener noreferrer">Code</a>
