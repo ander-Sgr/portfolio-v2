@@ -15,29 +15,25 @@
     /* Un poco más claro que bg */
     border: 1px solid rgba(100, 255, 218, 0.2);
     /* Borde sutil verde */
-    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(2, 12, 27, 0.7);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     display: flex;
-    flex-direction: column;
-    gap: 12px
+    flex-direction: row;
+
 }
 
 .cardContainer:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 24px rgba(100, 255, 218, 0.15), 0 6px 12px rgba(2, 12, 27, 0.6);
     border-color: #64ffda;
-    /* var(--green) directamente */
 }
 
 .imageContainer {
     position: relative;
-    width: 100%;
+    width: 430px;
     height: 300px;
-    border-radius: 1rem 1rem 0rem 0rem;
-    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
-    padding-bottom: 0;
+    flex-shrink: 0;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -45,37 +41,26 @@
 
 }
 
-.imageBackground {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    filter: blur(20px);
-    transform: scale(1.2);
-    opacity: 0.5;
-
-}
-
 .projectImage {
     position: relative;
-    max-width: 90%;
-    max-height: 90%;
+    width: 100%;
+    height: 100%;
     margin: auto;
     display: block;
     z-index: 1;
-    object-fit: contain;
+    object-fit: cover;
     mask-image: linear-gradient(to top, transparent 0%, rgb(0, 0, 0) 40%);
     -webkit-mask-image: linear-gradient(to top, transparent 0%, black 20%);
 
 }
 
 
-
 .contentContainer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 1.4rem;
+    padding: 1.2rem;
+    flex: 1;
 }
 
 .projectTitle {
@@ -86,7 +71,7 @@
 }
 
 .projectDescription {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--slate);
     line-height: 1.5;
     margin: 0px;
