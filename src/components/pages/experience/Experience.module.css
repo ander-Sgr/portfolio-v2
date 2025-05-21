@@ -1,0 +1,38 @@
+.expirienceContainer {
+  padding: 3rem;
+}
+
+.expirienceTitle {
+  font-size: 1.7rem;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.4rem;
+  border-bottom: 1px solid var(--accent-color);
+  padding-bottom: 0.8rem;
+}
+
+.timelineItem {
+  border-left: 2px solid var(--accent-color);
+  padding-left: 1rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+
+}
+
+.date {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.content h3 {
+  color: #ffffff;
+  margin: 1rem 0 0 0;
+}
+
+.content p {
+  color: #dcdcdc;
+  margin: 1rem 0 0rem;
+  line-height: 0.9rem;
+}
